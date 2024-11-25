@@ -18,8 +18,8 @@ This is a simple Todo List API built with Node.js and Express.
 
 ## Example API requests
 
-```sh
-# Create new todo items
+```bash
+# Create new todo items (CMD)
 curl -X POST -H "Content-Type: application/json" -d "{\"title\":\"Book doctor's appointment\"}" http://localhost:3000/todos
 curl -X POST -H "Content-Type: application/json" -d "{\"title\":\"Buy groceries\"}" http://localhost:3000/todos
 curl -X POST -H "Content-Type: application/json" -d "{\"title\":\"Call parents\"}" http://localhost:3000/todos
