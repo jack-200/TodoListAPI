@@ -1,24 +1,3 @@
-/*
-Setup:
-1. Initialize Node.js project: `npm init -y`
-2. Install dependencies: `npm install express body-parser`
-3. Start the server: `node server.js`
-
-Example API requests in CRUD operations:
-curl -X POST -H "Content-Type: application/json" -d "{\"title\":\"Book doctor's appointment\"}" http://localhost:3000/todos
-curl -X POST -H "Content-Type: application/json" -d "{\"title\":\"Buy groceries\"}" http://localhost:3000/todos
-curl -X POST -H "Content-Type: application/json" -d "{\"title\":\"Call parents\"}" http://localhost:3000/todos
-curl -X POST -H "Content-Type: application/json" -d "{\"title\":\"Finish project report\"}" http://localhost:3000/todos
-curl -X POST -H "Content-Type: application/json" -d "{\"title\":\"Plan weekend getaway\"}" http://localhost:3000/todos
-curl -X POST -H "Content-Type: application/json" -d "{\"title\":\"Study for exam\"}" http://localhost:3000/todos
-
-curl -H "Accept: application/json" http://localhost:3000/todos
-
-curl -X PUT -H "Content-Type: application/json" -d "{\"title\":\"changed title\",\"completed\":true}" http://localhost:3000/todos/1
-
-curl -X DELETE http://localhost:3000/todos/1
-*/
-
 // Create an Express server
 const expressModule = require("express");
 const bodyParserModule = require("body-parser");

@@ -5,7 +5,7 @@ This is a simple Todo List API built with Node.js and Express.
 ## Setup
 
 1. Initialize Node.js project: `npm init -y`
-2. Install dependencies: `npm install express body-parser`
+2. Install dependencies: `npm install`
 3. Start the server: `node server.js`
 
 ## API Endpoints
@@ -18,21 +18,31 @@ This is a simple Todo List API built with Node.js and Express.
 
 ## Example API requests
 
+### Create new todo items (CMD)
+
 ```bash
-# Create new todo items (CMD)
 curl -X POST -H "Content-Type: application/json" -d "{\"title\":\"Book doctor's appointment\"}" http://localhost:3000/todos
 curl -X POST -H "Content-Type: application/json" -d "{\"title\":\"Buy groceries\"}" http://localhost:3000/todos
 curl -X POST -H "Content-Type: application/json" -d "{\"title\":\"Call parents\"}" http://localhost:3000/todos
 curl -X POST -H "Content-Type: application/json" -d "{\"title\":\"Finish project report\"}" http://localhost:3000/todos
 curl -X POST -H "Content-Type: application/json" -d "{\"title\":\"Plan weekend getaway\"}" http://localhost:3000/todos
 curl -X POST -H "Content-Type: application/json" -d "{\"title\":\"Study for exam\"}" http://localhost:3000/todos
+```
 
-# Get all todo items
+### Get all todo items
+
+```bash
 curl -H "Accept: application/json" http://localhost:3000/todos
+```
 
-# Update a todo item
+### Update a todo item
+
+```bash
 curl -X PUT -H "Content-Type: application/json" -d "{\"title\":\"changed title\",\"completed\":true}" http://localhost:3000/todos/1
+```
 
-# Delete a todo item
+### Delete a todo item
+
+```bash
 curl -X DELETE http://localhost:3000/todos/1
 ```
